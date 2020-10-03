@@ -39,6 +39,7 @@
         <activity android:name=".activity.IdleMsrActivity" />
         <activity android:screenOrientation="landscape" android:name=".activity.FirmaActivity" />
         <activity android:name=".activity.PayProduct" />
+        <!--ASANTOS Muy importante agregar el launch mode como SingleTask, de lo contrario ciclas app y puede pedir login nuevamente, además de perder los parámetros-->
         <activity
             android:name="net.yolopago.pago.activity.MainActivity"
             android:screenOrientation="nosensor"
