@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/secHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"      >
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:layout_alignParentLeft="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:background="@null"
+                app:srcCompat="@drawable/ylp_ico_back" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="224dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-30dp"
+            android:layout_weight="2"
+            android:src="@drawable/ylp_logo_yolo" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:text="00:00"
+        android:textColor="@color/grgray" />
+
+    <TextView
+        android:id="@+id/pagoPor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Acepta pago por:"
+        android:textAlignment="center"
+        android:fontFamily="@font/akzidenzgrotesk_light"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/grgray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|clip_vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_vertical"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="$"
+                android:maxLength="7"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:background="@null"
+                android:fontFamily="@font/akzidenzgrotesk_light"
+                android:textColor="@color/greenYLP" />
+
+            <TextView
+                android:id="@+id/monto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:text="0.0"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textSize="50dp"
+                android:fontFamily="@font/akzidenzgrotesk_lightcond"
+                android:textColor="@color/greenYLP"
+                android:textColorHint="@color/greenYLP"
+                android:focusable="false"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:layout_weight="3">
+
+
+            <ImageView
+                android:layout_width="280dp"
+                android:layout_height="227dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ylp_back_lines" />
+
+            <ImageView
+                android:id="@+id/cardMachineImageView"
+                android:layout_width="256dp"
+                android:layout_height="196dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ylp_img_card" />
+
+        </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/requestCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="10dp"
+        android:text="Inserta o aproxima tarjeta"
+        android:textAlignment="center"
+        android:fontFamily="@font/akzidenzgrotesk_cond"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/grgray" />
+
+    <TextView
+        android:id="@+id/txtLeyend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|clip_vertical"
+        android:textColor="@color/grgray"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+        android:text=""
+        />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

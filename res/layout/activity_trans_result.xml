@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorPrimary">
+
+	<ImageView
+		android:layout_width="80dp"
+		android:layout_height="80dp"
+		android:id="@+id/logoImageView"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentStart="true"
+		android:layout_margin="20dp"
+		android:src="@drawable/ic_logo"/>
+
+	<ImageView
+		android:layout_width="80dp"
+		android:layout_height="80dp"
+		android:id="@+id/printerImageView"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentEnd="true"
+		android:layout_margin="20dp"
+		android:src="@drawable/ic_printer"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/layoutMessages"
+		android:layout_below="@+id/printerImageView"
+		android:orientation="vertical" >
+
+		<TextView
+			android:id="@+id/tTransResult_Line1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:textColor="@android:color/white"
+			android:textSize="24sp"
+			android:gravity="center"
+			/>
+
+		<TextView
+			android:id="@+id/tTransResult_Line2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp"
+			android:textColor="@android:color/white"
+			android:textSize="15sp"
+			android:gravity="center"
+			/>
+
+		<TextView
+			android:id="@+id/tTransResult_Line3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp"
+			android:textColor="@android:color/white"
+			android:textSize="13sp"
+			android:gravity="center"
+			/>
+
+		<TextView
+			android:id="@+id/tTransResult_Line4"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@android:color/white"
+			android:textSize="13sp"
+			android:gravity="center"
+			/>
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/okButton"
+		android:layout_width="100dp"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:layout_marginTop="20dp"
+		android:layout_below="@+id/layoutMessages"
+		android:background="@android:color/holo_orange_dark"
+		android:text="OK"
+		android:textColor="@color/white" />
+
+</RelativeLayout>

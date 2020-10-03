@@ -1,0 +1,133 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="TxListBinding" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/secHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff"          >
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_alignParentLeft="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:background="@null"
+                app:srcCompat="@drawable/ylp_ico_back" />
+
+            <TextView
+                android:id="@+id/cantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="number"
+                android:text="Transacciones"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textSize="10pt"
+                android:fontFamily="@font/akzidenzgrotesk_regular"
+                android:textColor="@color/grgray"/>
+
+        </RelativeLayout>
+        <HorizontalScrollView
+            android:id="@+id/horizontalScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/txToolbar"
+            android:background="@color/white"
+            android:elevation="2dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/mesButton_1"
+                android:background="@null"
+                android:layout_marginRight="5dp"
+                android:textAllCaps="false"
+                android:textSize="15dp"
+                android:textColor="@color/grayYLP"
+                android:text="Button 1"
+                android:fontFamily="@font/akzidenzgrotesk_regular"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/mesButton_2"
+                android:background="@null"
+                android:layout_marginRight="5dp"
+                android:textAllCaps="false"
+                android:textSize="15dp"
+                android:textColor="@color/grayYLP"
+                android:text="Button 2"
+                android:fontFamily="@font/akzidenzgrotesk_regular"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/mesButton_3"
+                android:background="@null"
+                android:layout_marginRight="5dp"
+                android:textAllCaps="false"
+                android:textSize="15dp"
+                android:textColor="@color/grayYLP"
+                android:text="Button 3"
+                android:fontFamily="@font/akzidenzgrotesk_regular"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/mesButton_4"
+                android:background="@null"
+                android:layout_marginRight="5dp"
+                android:textAllCaps="false"
+                android:textSize="15dp"
+                android:textColor="@color/grayYLP"
+                android:text="Button 4"
+                android:fontFamily="@font/akzidenzgrotesk_regular"/>
+
+        </LinearLayout>
+        </HorizontalScrollView>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/list_payment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"/>
+
+                </LinearLayout>
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</layout>

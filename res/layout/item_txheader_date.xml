@@ -1,0 +1,43 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00/00/0000"
+                android:id="@+id/yearMonthTextView"
+                android:textColor="@color/grgray"
+                android:layout_centerVertical="true"
+                android:textSize="15dp"
+                android:fontFamily="@font/akzidenzgrotesk_regular"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+</layout>

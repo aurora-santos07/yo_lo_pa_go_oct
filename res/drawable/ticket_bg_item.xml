@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:right="4dp" android:left="4dp" android:bottom="1dp" android:top="0dp">
+        <shape android:shape="rectangle">
+            <gradient    android:startColor="#09686868"   android:endColor="#00686868"  android:angle="90"/>
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+    <item android:right="5dp" android:left="5dp" android:bottom="2dp" android:top="0dp">
+        <shape android:shape="rectangle">
+            <gradient    android:startColor="#09686868"   android:endColor="#00686868"  android:angle="90"/>
+            <corners android:radius="9dp"/>
+        </shape>
+    </item>
+    <item android:right="4dp" android:left="4dp" android:bottom="3dp" android:top="0dp">
+        <shape android:shape="rectangle">
+            <gradient    android:startColor="#09686868"   android:endColor="#00686868"  android:angle="90"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <item android:right="3dp" android:left="3dp" android:bottom="3dp" android:top="0dp">
+        <shape android:shape="rectangle">
+            <gradient    android:startColor="#09686868"   android:endColor="#00686868"  android:angle="90"/>
+            <corners android:radius="7dp"/>
+        </shape>
+    </item>
+    <item android:right="4dp" android:left="4dp" android:bottom="4dp" android:top="0dp">
+        <shape android:shape="rectangle">
+            <gradient    android:startColor="#09686868"   android:endColor="#00686868"  android:angle="90"/>
+            <corners android:radius="6dp"/>
+        </shape>
+    </item>
+    <item android:right="5dp" android:left="5dp" android:bottom="5dp" >
+        <shape
+            android:shape="rectangle" >
+            <solid android:color="@color/colorPrimary" />
+            <stroke
+                android:width="1px"
+                android:color="#22686868"
+                />
+        </shape>
+    </item>
+
+</layer-list>

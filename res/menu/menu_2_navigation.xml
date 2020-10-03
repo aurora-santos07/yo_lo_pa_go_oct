@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_pay"
+        android:icon="@drawable/ic_pay"
+        android:title="Cobrar" />
+    <item
+        android:id="@+id/navigation_voucher"
+        android:icon="@drawable/ic_voucher"
+        android:title="Productos" />
+    <item
+        android:id="@+id/navigation_merchant"
+        android:icon="@drawable/ic_merchant"
+        android:title="Resumen" />
+</menu>

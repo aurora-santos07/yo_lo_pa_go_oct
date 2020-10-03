@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logoImageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_logo"/>
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/cardMachineImageView"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_card_machine"/>
+
+    <TextView
+        android:id="@+id/requestCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtLeyend"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Tarjeta con chip favor de insertar la tarjeta ..."
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/grgray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLeyend"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/grgray"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+        android:text=""
+        />
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/logoImageView"
+        android:layout_alignBottom="@+id/logoImageView"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-51dp"
+        android:text="00:00"
+        android:textColor="@color/grgray" />
+
+</RelativeLayout>

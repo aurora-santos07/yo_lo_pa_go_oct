@@ -1,0 +1,58 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class="FragmentNotificationBinding" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <ProgressBar
+            android:id="@+id/notificationProgressBar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:layout_marginTop="50dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgNotification"
+            android:layout_width="198dp"
+            android:layout_height="134dp"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:src="@drawable/yolopagogif" />
+
+        <TextView
+            android:id="@+id/txtErrorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgNotification"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/red"
+            android:layout_marginTop="20dp"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/txtNotificationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Configurando"
+            android:layout_above="@+id/txtNotification"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/grgray" />
+        <TextView
+            android:id="@+id/txtNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,102 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data class="FragmentResumenBinding" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/secHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff"          >
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_alignParentLeft="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:background="@null"
+                android:src="@drawable/ylp_ico_back" />
+
+            <TextView
+                android:id="@+id/cantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:inputType="number"
+                android:text="Carrito de Compra"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textSize="10pt"
+                android:fontFamily="@font/akzidenzgrotesk_light"
+                android:textColor="@color/grgray"/>
+
+            <ImageButton
+                android:id="@+id/cancelarProductos"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:background="@null"
+                android:src="@drawable/ylp_ico_trash" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/secHeader"
+            android:layout_above="@id/secVender"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/legend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:text="Tu carrito de compras esta vacío"/>
+
+            <com.baoyz.swipemenulistview.SwipeMenuListView
+                android:id="@+id/resumenlist1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.baoyz.swipemenulistview.SwipeMenuListView>
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/secVender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"        >
+            <Button
+                android:id="@+id/btnVender"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:background="@drawable/green_bg_button_prod"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="false"
+                android:text="Cobrar $0.0"
+                style="@style/btnButtonProductosGreen"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,140 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_bg_item"
+        android:paddingTop="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="7dp"
+        android:layout_margin="2dp">
+
+        <ImageView
+            android:id="@+id/cardTypeImageView"
+            android:layout_width="40dp"
+            android:layout_height="34dp"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"/>
+
+
+            <LinearLayout
+                android:id="@+id/cardLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/cardTypeImageView"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/amountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="$0.0"
+                    android:textColor="@color/greenYLP"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/akzidenzgrotesk_lightcond"/>
+
+                <TextView
+                    android:id="@+id/statusTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Pagado"
+                    android:textColor="@color/grgray"
+                    android:textSize="10dp"
+                    android:fontFamily="@font/akzidenzgrotesk_regular"/>
+
+                <TextView
+                    android:id="@+id/timeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/statusTextView"
+                    android:layout_marginRight="10dp"
+                    android:text="15:53"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/akzidenzgrotesk_light"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tipoTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/statusTextView"
+                            android:layout_marginRight="10dp"
+                            android:text="Credito"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/akzidenzgrotesk_light"/>
+                        <TextView
+                            android:id="@+id/maskedPANTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/statusTextView"
+                            android:text="####-3465"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/akzidenzgrotesk_light"/>
+                </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/cardLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btn_ticket"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/gray_bg_item"
+                    android:text="ticket"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/akzidenzgrotesk_light"
+                    android:textSize="10dp"/>
+                <Button
+                    android:id="@+id/btn_voucher"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/gray_bg_item_down"
+                    android:text="voucher"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/akzidenzgrotesk_light"
+                    android:textSize="10dp"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_menu_item"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:text="·      ·      ·"
+                android:textSize="15dp"
+                android:background="@null"
+                android:singleLine="false"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

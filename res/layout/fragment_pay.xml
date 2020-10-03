@@ -1,0 +1,92 @@
+<layout  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class="FragmentPayBinding" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layoutAmount"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/colorPrimary">
+
+
+            <TextView
+                android:id="@+id/txtPayTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Cobrar"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/white" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/txtPayTitle"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:id="@+id/txtAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:text=" 0.00"
+                    android:textSize="45dp"
+                    android:textColor="@color/grgray" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtProduct"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="20dp"
+                android:text="Producto"
+                android:textSize="16dp"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layoutButtonAmount"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/layoutAmount">
+
+            <Button
+                android:id="@+id/btnPay"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="37dp"
+                android:layout_marginStart="37dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Cobrar"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignBaseline="@+id/btnPay"
+                android:layout_alignBottom="@+id/btnPay"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="36dp"
+                android:layout_marginRight="36dp"
+                android:background="@android:color/holo_orange_dark"
+                android:text="Cancelar"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

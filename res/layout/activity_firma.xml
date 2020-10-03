@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+<com.wizarpos.emvsample.activity.DrawingView
+    android:id="@+id/draw_sing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/textos"
+    android:background="@color/colorPrimary"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_borrar"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/white_bg_item"
+        android:textColor="@color/blueYLP"
+        android:textAllCaps="false"
+        android:text="Borrar"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_continuar"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_bg_item"
+        android:textColor="@color/blueYLP"
+        android:textAllCaps="false"
+        android:text="Continuar"/>
+
+    <RelativeLayout
+        android:id="@+id/textos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/btn_continuar"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_monto"
+            android:textAlignment="viewStart"
+            android:text="$0.0"
+            android:textColor="@color/greenYLP"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_monto"
+            android:id="@+id/text_data"
+            android:text=""/>
+    </RelativeLayout>
+</RelativeLayout>

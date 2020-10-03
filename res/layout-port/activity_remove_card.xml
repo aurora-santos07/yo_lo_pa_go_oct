@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="208dp"
+        android:layout_height="146dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ylp_logo_yolo" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/connectionImageView"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ylp_img_retirar_tarjeta"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tProcessEMVCard_TransType"
+        android:layout_below="@+id/connectionImageView"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/darkGrayYLP"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:text="Retire su Tarjeta"
+        />
+
+</RelativeLayout>

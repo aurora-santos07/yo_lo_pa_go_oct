@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutMessages"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="224dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:src="@drawable/ylp_logo_yolo" />
+
+        <TextView
+            android:id="@+id/tTransResult_Line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/grayYLP"
+            android:textSize="24sp"
+            android:fontFamily="@font/akzidenzgrotesk_light"/>
+
+        <TextView
+            android:id="@+id/tTransResult_Line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grayYLP"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:fontFamily="@font/akzidenzgrotesk_light"
+            />
+
+        <TextView
+            android:id="@+id/tTransResult_Line3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grayYLP"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:fontFamily="@font/akzidenzgrotesk_light"
+            />
+
+        <TextView
+            android:id="@+id/tTransResult_Line4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="13sp"
+            android:gravity="center|center_horizontal"
+            />
+        <RelativeLayout
+            android:id="@+id/imgType"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:layout_weight="3"
+            android:layout_below="@+id/layoutMessages"
+            android:layout_above="@+id/secBotones">
+
+
+            <ImageView
+                android:id="@+id/cardMachineImageView"
+                android:layout_width="256dp"
+                android:layout_height="196dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ylp_img_aprobado" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/secBotones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:gravity="center_vertical|center_horizontal">
+
+            <Button
+                android:id="@+id/reimprimir"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginRight="30dp"
+                android:padding="5dp"
+                android:textAllCaps="false"
+                android:background="@drawable/white_bg_item"
+                android:text="Reimprimir vocher"
+                android:textColor="@color/blueYLP"
+                android:fontFamily="@font/akzidenzgrotesk_light" />
+            <Button
+                android:id="@+id/okButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginRight="30dp"
+                android:padding="5dp"
+                android:textAllCaps="false"
+                android:background="@drawable/white_bg_item"
+                android:text="Regresar"
+                android:textColor="@color/blueYLP"
+                android:fontFamily="@font/akzidenzgrotesk_light" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

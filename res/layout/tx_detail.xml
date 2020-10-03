@@ -1,0 +1,391 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="TxDetailBinding" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/txToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detalle de la transaccion"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="40dp"/>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/cardTypeImageView"
+                android:layout_width="60dp"
+                android:layout_height="52dp"
+                android:src="@drawable/ic_amex"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cardTypeImageView"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/issuerBankTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Banorte"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="5dp"
+                        />
+                    <TextView
+                        android:id="@+id/cardTypeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Debito"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/issuerBankTextView"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/maskedPANTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="**** 3465"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/cardHolderTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dante Ortiz Orozco"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/maskedPANTextView"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/border"
+            android:layout_marginTop="10dp">
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Folio:"
+                    android:textColor="@android:color/black"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/idTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="12dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="5dp"/>
+            </TableRow>
+            <TableRow android:background="@drawable/border">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estado:"
+                    android:textColor="@android:color/black"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/statusTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pagado"
+                    android:textColor="@android:color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="5dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha:"
+                    android:textColor="@android:color/black"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/payedDateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12/Oct/2018 (Dom) 12:34:23 PM"
+                    android:textColor="@android:color/black"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="5dp"/>
+            </TableRow>
+            <TableRow android:background="@drawable/border">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monto: "
+                    android:textColor="@android:color/black"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/amountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$ 3,450.23"
+                    android:textColor="@android:color/black"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="5dp" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comercio:"
+                    android:textColor="@android:color/black"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/merchantTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Starbucks Condesa"
+                    android:textColor="@android:color/black"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="5dp" />
+            </TableRow>
+            <TableRow android:background="@drawable/border">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vendedor:"
+                    android:textColor="@android:color/black"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/sellerTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Juan Perez Jolote"
+                    android:textColor="@android:color/black"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="5dp" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terminal:"
+                    android:textColor="@android:color/black"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/terminalTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WESGQRRT-1"
+                    android:textColor="@android:color/black"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="5dp" />
+            </TableRow>
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <ImageButton
+                android:id="@+id/resumenVenta"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="52dp"
+                android:layout_toStartOf="@+id/cancelImageView"
+                android:background="@color/bg_color"
+                app:srcCompat="@android:drawable/ic_input_add" />
+
+            <ImageView
+                android:id="@+id/cancelImageView"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="191dp"
+                android:layout_marginRight="60dp"
+                android:src="@drawable/ic_cancel" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancelTextView"
+                android:text="Cancelar"
+                android:layout_toLeftOf="@+id/refoundTextView"
+                android:textSize="11dp"
+                android:layout_marginRight="48dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/refoundTextView"
+                android:text="Devolver"
+                android:layout_alignParentEnd="true"
+                android:textSize="11dp"
+                android:layout_marginRight="95dp"
+                />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/labelReturnsTextView"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:textSize="12dp" />
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 12,000.50"
+                android:id="@+id/amountReturnsTextView"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="right"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/labelTxReturnsTextView"
+            android:text="Devoluciones"
+            android:textSize="12dp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/idLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Folio"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/estadoFechaLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado y Fecha"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/idLabelTextView"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/autorizoTerminalLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terminal y Autorizador"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/estadoFechaLabelTextView"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/montoLabelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monto"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/list_payment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabRefund"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_refund"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="50dp"
+                android:visibility="invisible"
+                app:backgroundTint="@android:color/white"
+                />
+        </FrameLayout>
+
+    </LinearLayout>
+</layout>

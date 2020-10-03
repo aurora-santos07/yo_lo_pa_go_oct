@@ -1,0 +1,48 @@
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data class="FragmentPricipalBinding" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/modventaP"
+            android:layout_width="1dp"
+            android:layout_height="1dp" />
+
+        <ListView
+            android:id="@+id/principalList"
+            android:layout_width="1dp"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/layoutLoginTop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="242dp"
+                android:layout_height="162dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="74dp"
+                android:layout_marginTop="124dp"
+                android:layout_marginEnd="94dp"
+                android:layout_marginBottom="193dp"
+                app:srcCompat="@drawable/ic_logo" />
+
+            <ImageButton
+                android:id="@+id/logout"
+                android:layout_width="54dp"
+                android:layout_height="53dp"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="25dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/btn_operator_logout" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

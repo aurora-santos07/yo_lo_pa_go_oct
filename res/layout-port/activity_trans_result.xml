@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorPrimary">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/layoutMessages"
+		android:orientation="vertical" >
+
+		<RelativeLayout
+			android:id="@+id/secHeader"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"      >
+
+			<ImageButton
+				android:id="@+id/btn_back"
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:padding="15dp"
+				android:layout_alignParentLeft="true"
+				android:adjustViewBounds="true"
+				android:scaleType="centerInside"
+				android:background="@null"
+				app:srcCompat="@drawable/ylp_ico_back" />
+
+		</RelativeLayout>
+
+
+		<ImageView
+			android:id="@+id/logoImageView"
+			android:layout_width="224dp"
+			android:layout_height="26dp"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="-30dp"
+			android:layout_weight="2"
+			android:src="@drawable/ylp_logo_yolo" />
+
+		<TextView
+			android:id="@+id/tTransResult_Line1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:textSize="20sp"
+			android:gravity="center"
+			android:fontFamily="@font/akzidenzgrotesk_cond"
+			/>
+
+		<TextView
+			android:id="@+id/tTransResult_Line2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:textSize="13sp"
+			android:gravity="center|center_horizontal"
+			android:fontFamily="@font/akzidenzgrotesk_light"
+			/>
+		<RelativeLayout
+			android:id="@+id/imgType"
+			android:layout_width="match_parent"
+			android:layout_height="108dp"
+			android:layout_weight="3">
+
+			<ImageView
+				android:id="@+id/img_aprobado"
+				android:layout_width="280dp"
+				android:layout_height="227dp"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:visibility="visible"
+				android:src="@drawable/ylp_img_aprobado"/>
+
+			<ImageView
+				android:id="@+id/img_declinado"
+				android:layout_width="256dp"
+				android:layout_height="196dp"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:visibility="invisible"
+				android:src="@drawable/ylp_img_declinado" />
+
+			<ImageView
+				android:id="@+id/img_error"
+				android:layout_width="256dp"
+				android:layout_height="196dp"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:visibility="invisible"
+				android:src="@drawable/ylp_img_error" />
+
+
+		</RelativeLayout>
+
+		<LinearLayout
+			android:id="@+id/secBotones"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/pregunta"
+				android:layout_alignParentBottom="true"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/grayYLP"
+				android:textSize="13sp"
+				android:gravity="center|center_horizontal"
+				android:fontFamily="@font/akzidenzgrotesk_light"
+				/>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/secBotonesAceptado"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_margin="10dp"
+				android:gravity="center_vertical|center_horizontal">
+
+				<Button
+					android:id="@+id/reimprimir"
+					android:layout_width="100dp"
+					android:layout_height="wrap_content"
+					android:singleLine="false"
+					android:layout_marginRight="30dp"
+					android:padding="5dp"
+					android:textAllCaps="false"
+					android:background="@drawable/white_bg_item"
+					android:text="Reimprimir voucher"
+					android:textColor="@color/blueYLP"
+					android:fontFamily="@font/akzidenzgrotesk_light"/>
+				<Button
+					android:id="@+id/okButton"
+					android:layout_width="100dp"
+					android:layout_height="wrap_content"
+					android:singleLine="false"
+					android:layout_marginRight="30dp"
+					android:padding="5dp"
+					android:textAllCaps="false"
+					android:background="@drawable/white_bg_item"
+					android:text="Imprimir ticket"
+					android:textColor="@color/blueYLP"
+					android:fontFamily="@font/akzidenzgrotesk_light"/>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/secBotonesDeclinado"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_margin="10dp"
+				android:gravity="center_vertical|center_horizontal">
+
+				<Button
+					android:id="@+id/formaPagoSi"
+					android:layout_width="100dp"
+					android:layout_height="wrap_content"
+					android:singleLine="false"
+					android:layout_marginRight="30dp"
+					android:padding="5dp"
+					android:textAllCaps="false"
+					android:background="@drawable/white_bg_item"
+					android:text="Si"
+					android:textColor="@color/blueYLP"
+					android:fontFamily="@font/akzidenzgrotesk_light"/>
+				<Button
+					android:id="@+id/formaPagoNo"
+					android:layout_width="100dp"
+					android:layout_height="wrap_content"
+					android:singleLine="false"
+					android:layout_marginRight="30dp"
+					android:padding="5dp"
+					android:textAllCaps="false"
+					android:background="@drawable/white_bg_item"
+					android:text="No"
+					android:textColor="@color/blueYLP"
+					android:fontFamily="@font/akzidenzgrotesk_light"/>
+			</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+
+	</LinearLayout>
+
+
+
+
+</RelativeLayout>

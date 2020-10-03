@@ -1,0 +1,86 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/idTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="00001"
+            android:textColor="@android:color/black"
+            android:textSize="10dp" />
+
+        <LinearLayout
+            android:id="@+id/cardLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/idTextView"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/statusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Pagado"
+                android:textColor="@android:color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/dateReturnTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/statusTextView"
+                android:text="08/Oct/2018 11:23:12 AM"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/cardLayout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/terminalTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="GWZQ1li23942384"
+                android:textColor="@android:color/black"
+                android:textSize="9dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/sellerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/orange"
+                android:text="Pedro Azpe"
+                android:textSize="10dp"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 33,000.23"
+            android:id="@+id/amountReturnsTextView"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="right"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+</layout>
