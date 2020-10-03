@@ -56,7 +56,7 @@ public class FragmentLogin extends AbstractFragment {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login, container, false);
 
         //ASANTOS hardcode para hacer pruebas más rápido
-        binding.editTextEmail.setText("roger@yolopago.com.mx");
+        binding.editTextEmail.setText("rogerg@yolopago.com.mx");
         binding.editTextPassword.setText("Hola1234$");
         //ASANTOS se obtienen los valores de monto y concepto
         if(getArguments()!= null){Log.d("getArguments", "notnull");
