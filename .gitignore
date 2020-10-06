@@ -85,7 +85,6 @@ lint/tmp/
 # lint/reports/
 .gradle/
 .idea/
-gradle.properties
 gradle/
 gradlew
 gradlew.bat
