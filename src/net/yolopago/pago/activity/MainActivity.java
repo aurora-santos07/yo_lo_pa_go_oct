@@ -441,7 +441,12 @@ public class MainActivity extends AppCompatActivity implements InternetConnectio
 		super.onActivityResult( requestCode,  resultCode,  data);
 
 		//Log.d("(TAG, "onActivityResult requestCode:"+requestCode+" resultCode:"+resultCode);
-
+		//ASANTOS elimina valores para evitar cicladops en la app
+		if (amount != null && requestCode == 0 ){
+			amount = null;
+			concept = null;
+			finish(); //ASANTOS se cierra esta app para ver la app anterior
+		}
 		if(resultCode== TransResultActivity.END_OK || resultCode== TransResultActivity.END_FAIL_NO) {
 			clearProductList();
 			if (theFragment instanceof FragmentResumen){
@@ -451,9 +456,7 @@ public class MainActivity extends AppCompatActivity implements InternetConnectio
 				((FragmentProductos)theFragment).refresh();
 				//((FragmentProductos)theFragment).enableBtns();
 			}
-			//ASANTOS elimina valores para evitar cicladops en la app
-			amount = null;
-			concept = null;
+
 
 		}else if(resultCode== TransResultActivity.END_FAIL_SI) {
 			if (theFragment instanceof FragmentResumen){
@@ -488,7 +491,7 @@ public class MainActivity extends AppCompatActivity implements InternetConnectio
 	}
 
 	public void checkReversos(){
-		Log.d(TAG, "checkReversos: "+theFragment.getClass().getName()+ "" +FragmentLogin.class.getName());
+		//Log.d(TAG, "checkReversos: "+theFragment.getClass().getName()+ "" +FragmentLogin.class.getName());
 
 		if(theFragment!=null && !theFragment.getClass().isAssignableFrom(FragmentLogin.class) &&
 			!theFragment.getClass().isAssignableFrom(FragmentSplash.class) ){

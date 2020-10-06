@@ -49,6 +49,9 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="net.yolopago.pago.PAGO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <!--Se agrega intent filter para indicar que esta app realiza pagos-->
             </intent-filter>
         </activity>
         <activity
